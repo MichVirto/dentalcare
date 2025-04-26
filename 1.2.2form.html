@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dental Appointment Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+.back-link {
+    text-align: right;
+    margin-top: 10px;
+}
+.back-link a {
+    color: #007399;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.back-link a:hover {
+    color: #005f73;
+}
+    </style>
+</head>
+<body>
+<nav class="top-navbar">
+        <i class="fas fa-tooth"></i>
+        <span>Dental</span>
+    </nav>
+    <div class="content-wrapper">
+        <div class="left-side">
+            <div class="left-content">
+            <h1>Your Smile Matters</h1>
+<p>Book a quick and easy appointment for your tooth extraction. Hassle-free and professional dental care, right at your fingertips.</p>
+            </div>
+        </div>
+    <div class="right-side">
+        <div class="container">
+        <h2>Tooth Extraction Appointment</h2>
+         <form action="1.2.2form.html" method="POST">
+            <hr>
+            <br>
+            <label for="info">Personal Information</label>
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="schoolID" placeholder="School ID number" required>
+<select name="major" id="course" required>
+  <option value="" disabled selected>Select your course/major</option>
+  <option value="Computer Science">BSCS</option>
+  <option value="Elementary Education">BEED</option>
+  <option value="Hospitality Management">BSHM</option>
+  <option value="Automotive Technology">BIT Major in Automotive Technology</option>
+  <option value="Beauty care and Wellness">BIT Major in Beauty Care & Wellness</option>
+  <option value="Drafting Technology">BIT Major in Drafting Technology</option>
+  <option value="Electrical Technology">BIT Major in Electrical Technology</option>
+  <option value="Food Service Management">BIT Major in Food Service Management</option>
+  <option value="Garments,Fashion and Design">BIT Major in Garments, Fashoin & Design</option>
+  <option value="Mechanical Technology">BIT Major in Mechanical Technology</option>
+  <option value="Social Work">SW</option>
+  <option value="Criminology">Crim</option>
+</select> 
+            <hr>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            <hr>
+            <button type="submit">Book Appointment</button>
+        </form>
+        </form>
+        <div class="back-link">
+    <a href="index.html">Back</a>
+</div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

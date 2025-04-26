@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Appointment and Management</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+.top-navbar {
+    background-color: #004466;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.top-navbar i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: white;
+        }
+.top-navbar span {
+    color: white;
+}
+    </style>
+</head>
+<body>
+<nav class="top-navbar">
+        <i class="fas fa-tooth"></i>
+        <span>Dental</span>
+    </nav>
+
+    <main>
+    <div class="content-wrapper">
+        <div class="left-side">
+            
+            <h2>Welcome to <br>Mindanao State University<br>Maigo College of Education, Science & Technology <br>Dental Care</h2>
+            <p>Providing quality dental services for students and staff.</p>
+        </div>
+
+        <div class="container" id="main-container">
+    <h1>MSU - MCEST <br>DENTAL CARE</h1>
+
+    <div class="role-selection">
+        <button class="role-btn" id="admin-btn">
+            <i class="fas fa-user-shield"></i> Admin
+        </button>
+        <button class="role-btn" id="user-btn">
+            <i class="fa-solid fa-users"></i> Patient
+        </button>
+    </div>
+</div>
+    </div>
+<!--nnnnnnnnnnnnn-->
+    <section id="contact-section" class="contact-section">
+        <h2>Contact Information</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <h3>School Clinic</h3>
+                <p>Email: dentalcare@msu.edu.ph</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: MSU-MSAT Campus, Maigo, LDN</p>
+            </div>
+            <div class="contact-card">
+                <h3>Admin / Dentist</h3>
+                <p>Dr. Jane Doe</p>
+                <p>Email: janedoe@msu.edu.ph</p>
+                <p>Phone: (987) 654-3210</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    document.getElementById("admin-btn").addEventListener("click", function () {
+        fetch("1.1.0dentist_login.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("main-container").innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error loading login form:", error);
+            });
+    });
+    
+    document.getElementById("user-btn").addEventListener("click", function () {
+       fetch("1.2.0patient.html")
+          .then(response => response.text())
+          .then(data => {
+           document.getElementById("main-container").innerHTML = data;
+            })
+         .catch(error => {
+           console.error("Error loading login form:", error);
+           });
+      });
+</script>
+</body>
+</html>

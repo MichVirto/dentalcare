@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Appointment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:  #e6f7ff;
+    color:  #174c64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.content-wrapper {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    padding: 100px 20px; 
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color:  #174c64;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    text-align: right;
+    margin-top: 10px;
+}
+.back-link a {
+    color: #007399;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.back-link a:hover {
+    color: #005f73;
+}
+    button[type="submit"] {
+    background-color: #316a84;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    button[type="submit"]:hover {
+    background-color: #2d647e;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid  #a4c1ce;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background:  #f7f9fa;
+    color:  #30637b;
+}
+
+.right-side {
+    flex: 1;
+    color: #004466;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.container,
+.right-content {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.right-content {
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.top-navbar {
+    background-color: #004466;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.top-navbar i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: white;
+        }
+.top-navbar span {
+    color: white;
+}
+.results {
+  text-align: left;
+
+}
+    </style>
+</head>
+<body>
+    <nav class="top-navbar">
+        <i class="fas fa-tooth"></i>
+        <span>Dental</span>
+    </nav>
+    <div class="content-wrapper">
+    <div class="left-side">
+        <div class="container">
+            <h2>Check Your Appointment</h2>
+            <form method="POST" action="alreadyappointed.html">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" required placeholder="Enter your email">
+
+                <label for="schoolID">School ID:</label>
+                <input type="text" name="schoolID" required placeholder="Enter your School ID">
+
+                <button type="submit">Search Appointment</button>
+            </form>
+            <div class="back-link">
+    <a href="index.html">Back</a>
+</div>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <div class="right-content">
+            <h1>SEARCH</h1>
+            <p>Welcome to our dental appointment checker!</p>
+            <div class="results">
+         </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>

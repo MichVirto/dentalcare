@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dentist Login - DentalCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #e6f7ff;
+            font-family: Arial, sans-serif;
+            height: 100hv;
+        }
+        .login-box {
+            width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .login-box h2 {
+            text-align: center;
+            color: #004466;
+            margin-bottom: 25px;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            background: #007399;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .login-box button:hover {
+            background: #005f73;
+        }
+        .back-link {
+    text-align: right;
+    margin-top: 10px;
+}
+.back-link a {
+    color: #007399;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.back-link a:hover {
+    color: #005f73;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Dentist Login</h2>
+        <form method="POST" action="1.1.0dentist_login.html">
+            <input type="text" name="Dentist_Code" placeholder="Dentist Code" required autocomplete="off">
+            <button type="submit">Login</button>
+        </form>
+        <div class="back-link">
+    <a href="index.html">Back</a>
+</div>
+
+    </div>
+</body>
+</html>
